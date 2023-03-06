@@ -48,4 +48,5 @@ public class Baconator {
     public int getCount(){
         return count;
     }
+
 }
