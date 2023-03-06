@@ -3,6 +3,7 @@ import java.util.*;
 public class Baconator {
     private ArrayList<SimpleMovie> movies;
     private int count;
+    //test
 
     public Baconator(){
         movies = MovieDatabaseBuilder.getMovieDB("src/movie_data");
