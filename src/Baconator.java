@@ -3,7 +3,6 @@ import java.util.*;
 public class Baconator {
     private ArrayList<SimpleMovie> movies;
     private int count;
-    //test
 
     public Baconator(){
         movies = MovieDatabaseBuilder.getMovieDB("src/movie_data");
@@ -21,7 +20,7 @@ public class Baconator {
         count++;
         return connectedMovies;
     }
-    public ArrayList<String> findConnectedActors(ArrayList<SimpleMovie> connectedMovies,){
+    public ArrayList<String> findConnectedActors(ArrayList<SimpleMovie> connectedMovies){
         ArrayList<String> connectedActors = new ArrayList<String>();
         for(SimpleMovie cm: connectedMovies){
             for(String a: cm.getActors()){
