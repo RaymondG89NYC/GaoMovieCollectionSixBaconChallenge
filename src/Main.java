@@ -15,10 +15,14 @@ public class Main {
         int count = 0;
 
         while(!bacon.checkConnected(connectedActors, chosenActor, "Kevin Bacon")){
-            connectedMovies = bacon.findConnectedMovies(connectedActors)
+            connectedMovies = bacon.findConnectedMovies(connectedActors, "Kevin Bacon");
+            connectedActors = bacon.findConnectedActors(connectedMovies);
+//            System.out.println(connectedMovies);
+//            System.out.println(connectedActors);
             count = bacon.getCount();
         }
 
+        System.out.println("Bacon number of " + count);
 //        for (SimpleMovie m: movies) {
 //            ArrayList<String> actors = m.getActors();
 //            for(int i = 0; i < actors.size(); i ++){
@@ -28,7 +32,7 @@ public class Main {
 //            }
 //        }
 
-        System.out.println("Number of movies: " + movies.size());
+//        System.out.println("Number of movies: " + movies.size());
 
 
     }

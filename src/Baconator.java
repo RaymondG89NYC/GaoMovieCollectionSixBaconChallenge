@@ -12,7 +12,7 @@ public class Baconator {
         ArrayList<SimpleMovie> connectedMovies = new ArrayList<SimpleMovie>();
         for (SimpleMovie m: movies) {
             for(int i = 0; i < actors.size(); i ++){
-                if(actors.contains(origin)){
+                if(actors.get(i).contains(origin)){
                     connectedMovies.add(m);
                 }
             }
@@ -43,7 +43,7 @@ public class Baconator {
                 return true;
             }
         }
-        return foundFirst && foundSecond;
+        return false;
     }
     public int getCount(){
         return count;
